@@ -1,0 +1,100 @@
+body{
+    background-color: cadetblue;
+    text-align: center;
+}
+
+h1{
+    margin: 50px auto;
+    font-size: 70px;
+    font-family: 'Ruslan Display', cursive;
+}
+
+.color-pad{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 8px solid black;
+}
+
+.green{
+    background-color: green;
+    border-radius: 100% 0 0 0;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 0 100% 0 0;
+}
+.red{
+    background-color: red;
+    border-radius: 0 0 0 100%;
+}
+.blue{
+    background-color: blue;
+    border-radius: 0 0 100% 0;
+}
+
+
+.menu-btn{
+    height: 200px;
+    width: 200px;
+    border: 8px solid black;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 70px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    outline: none;
+}
+
+.simon-board{
+    position: relative;
+}
+
+.play-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.pressed{
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+
+  footer{
+      padding: 1% 0 0 1%;
+  }
+
+
+  @media(max-width:499px){
+    .color-pad{
+        height: 130px;
+        width: 130px;
+    }
+    .menu-btn{
+        width: 130px;
+        height: 130px;
+        font-size: 2rem !important;
+    }
+    .play-button{
+        width: 130px;
+        height: 130px;
+        margin-top: 220px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    footer{
+        padding: 10%;
+    }
+  }
